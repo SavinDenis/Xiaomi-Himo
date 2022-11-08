@@ -313,7 +313,7 @@ h1,h2,h3,h4,h5,h6,p{
     max-width: 630px;
 }
 
-.form__input-text{;
+.form__input-text{
     margin-bottom: 21px;
     padding-right: 120px;
 }
@@ -350,7 +350,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .form__button-submit{
-    padding: 28px 81px;
+    padding: 28px 60px 28px 81px;
     text-transform: uppercase;
     background-color: #131313;
     font-weight: 400;
@@ -366,14 +366,43 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
     max-width: 286px;
     justify-content: space-between;
-    border-radius: 30px;
 }
 
 .form_button-color-grey,
 .form_button-color-white,
 .form_button-color-red{
     border-radius: 30px;
-    border: none;
     height: 12px;
     width: 80px;
+}
+
+.form_button-color-grey{
+    background-color: #6F6F6F;
+    border: 1px solid #6F6F6F;
+}
+
+.form_button-color-white{
+    background-color: #fff;
+    border: 1px solid #6F6F6F;
+}
+
+.form_button-color-red{
+    background-color: #ff4040;
+    border: 1px solid #ff4040;
+}
+
+
+.price{
+    padding-left: 70px;
+    padding-top: 28px;
+}
+.price_img{
+    position: relative;
+    z-index: 1;
+}
+
+.color__img{
+    position: relative;
+    margin-left: -150px;
+    z-index: -1;
 }
