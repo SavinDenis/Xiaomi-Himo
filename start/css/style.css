@@ -273,7 +273,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 
-.bike_slider{
+.bike_slider-big{
     margin-bottom: 100px;
 }
 
@@ -366,4 +366,14 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
     max-width: 286px;
     justify-content: space-between;
+    border-radius: 30px;
+}
+
+.form_button-color-grey,
+.form_button-color-white,
+.form_button-color-red{
+    border-radius: 30px;
+    border: none;
+    height: 12px;
+    width: 80px;
 }
