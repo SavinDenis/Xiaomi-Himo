@@ -291,32 +291,74 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .order__items{
-    display: flex;
-    justify-content: space-between;
+    position: relative;
 }
+
 
 .order__title{
     text-transform: uppercase;
     margin-bottom: 41px;
 }
 
-
 .order__form{
     max-width: 420px
-}
-
-.form{
-    ;
 }
 
 .color__img{
     max-width: 630px;
 }
 
-.form__input-text{
-    margin-bottom: 21px;
-    padding-right: 120px;
+
+.order__form-text {
+    max-width: 300px;
+    margin-bottom: 30px;
 }
+
+
+.form_bike{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;   
+}
+
+.form_button-check:checked + .form_bike{
+    display: block;
+}
+
+
+.form__collor-btn-grey, 
+.form__collor-btn-white, 
+.form__collor-btn-red {
+    height: 12px;
+    width: 80px;
+    border-radius: 30px;
+    margin-right: 23px;
+}
+
+.form__collor-btn-grey:hover, 
+.form__collor-btn-white:hover, 
+.form__collor-btn-red:hover {
+    cursor: pointer;
+}
+
+
+.form__collor-btn-grey{
+ background-color: #6F6F6F;
+ border: 1px solid #6F6F6F;
+ margin-right: 23px;
+ 
+} 
+.form__collor-btn-white{
+    background-color: #fff;
+    border: 1px solid #6F6F6F;
+    margin-right: 23px;
+} 
+.form__collor-btn-red {
+    background-color: #ff4040;
+    border: 1px solid #ff4040;
+}
+
 
 .form__input-tel,
 .form__input-name{
@@ -344,9 +386,15 @@ h1,h2,h3,h4,h5,h6,p{
 
 }
 
-
+.form_button-check{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
 .form_button-color{
-    margin-bottom: 50px;
+    display: flex;
 }
 
 .form__button-submit{
@@ -359,50 +407,32 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 1.1em;
     color: #fff;
     border: none;
+    margin-top: 50px;
 }
 
-
-.form_button-color{
-    display: flex;
-    max-width: 286px;
-    justify-content: space-between;
-}
-
-.form_button-color-grey,
-.form_button-color-white,
-.form_button-color-red{
-    border-radius: 30px;
-    height: 12px;
-    width: 80px;
-}
-
-.form_button-color-grey{
-    background-color: #6F6F6F;
-    border: 1px solid #6F6F6F;
-}
-
-.form_button-color-white{
-    background-color: #fff;
-    border: 1px solid #6F6F6F;
-}
-
-.form_button-color-red{
-    background-color: #ff4040;
+.form__bike-price{
+    font-size: 32px;
+    line-height: 100px;
+    position: absolute;
+    top: 30px;
+    right: 490px;
     border: 1px solid #ff4040;
+    border-radius: 100%;
+    width: 220px;
+    height: 100px;
+    text-align: center;
+   
+
 }
 
+.form__bike-price:after{
+    content: "" ;
+    border: 1px solid #ff4040;
+    border-radius: 100%;
+    width: 220px;
+    height: 100px;
+    top: 12px;
+    right: 0;
+    position: absolute;
+}
 
-.price{
-    padding-left: 70px;
-    padding-top: 28px;
-}
-.price_img{
-    position: relative;
-    z-index: 1;
-}
-
-.color__img{
-    position: relative;
-    margin-left: -150px;
-    z-index: -1;
-}

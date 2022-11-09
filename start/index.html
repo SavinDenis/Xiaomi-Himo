@@ -262,78 +262,63 @@
                     <form  class="form" action="" method="post">
                         <h4 class="order__title">
                             ЗАКАЗАТЬ
-                        </h4>
-                        <div class="form__input">
-                             
-                            <div class="form__input-text">
-                                 <p>Если Вы хотите заказать велосипед, оставьте свой контакт и наш менеджер перезвонит вам в ближайшее время
-                             </p>
-                            </div>
-                           
+                        </h4>     
+                        <p class="order__form-text">Если Вы хотите заказать велосипед, оставьте свой контакт и наш менеджер перезвонит вам в ближайшее время
+                        </p>
+                        <input class="form__input-name" type="text" placeholder="имя">
+                        <input class="form__input-tel" type="tel" placeholder="телефон">
+                        <p class="form__input-color">выберите желаемый цвет</p> 
+                        <div class="form_button-color">
+                                <label>
+                                    <input  class="form_button-check" type="radio" name="name">
+                                    <div class="form_bike">
+                                        <img class="form_bike-img" src="images/bike_grey.jpg" alt="">
+                                        <p class="form__bike-price">33990р.</p>
+                                    </div>
+                                    <div class="form__collor-btn-grey"></div>
+                                </label>
 
-                             <p><input class="form__input-name" type="text" placeholder="имя"></p>
-                            
-                             <p>
-                                <input class="form__input-tel" type="tel" placeholder="телефон">
-                             </p>
-                            
-                             <p class="form__input-color">выберите желаемый цвет</p>
-                            
-                            <div class="form_button-color">
-                                <label for=""><button  class="form_button-color-grey" type="radio"></button>
+                                <label>
+                                    <input  class="form_button-check" type="radio" name="name" checked>
+                                    
+                                    <div class="form_bike">
+                                        <img class="form_bike-img" src="images/bike_white.jpg" alt="">
+                                        <p class="form__bike-price">32990р.</p>
+                                    </div>
+                                    <div class="form__collor-btn-white">
+
+                                    </div>
                                 </label>
-                                <label for=""><button class="form_button-color-white" type="radio"></button>
+
+                                <label>
+                                    <input  class="form_button-check" type="radio" name="name">
+                                    
+                                    <div class="form_bike">
+                                        <img class="form_bike-img" src="images/bike_red.jpg" alt="">
+                                        <p class="form__bike-price">35990р.</p>
+                                    </div>
+                                    <div  class="form__collor-btn-red">
+
+                                    </div>
                                 </label>
-                                <label for=""><button class="form_button-color-red" type="radio"></button>
-                                </label>
-                            </div>
                         </div>
+                        
 
-                        <button class="form__button-submit" type="submit">заказать</button>
+                         <button class="form__button-submit" type="submit">заказать</button>
                        
                     </form>
                         
                     
                 </div>
-                <div class="price">
-                    <img class="price__img" src="/start/images/price.png" alt="price">
-                         
-                </div>
-                <div class="color__img">
-                    <img src="images/bike_grey.jpg" alt="white">
-                    <img src="images/bike_white.jpg" alt="grey">
-                    <img src="images/bike_red.jpg" alt="red">
-                </div>
+                
             </div>
         </div>
     </section>
 
 
-<!--hgjhghgfgngvcbnvghfgvnbv-->
+
 
     
-<form method="post" enctype="application/x-www-form-urlencoded" action="https://pizza.example.com/order.cgi">
-    <p><label>Customer name: <input name="custname" required autocomplete="shipping name"></label></p>
-    <p><label>Telephone: <input type=tel name="custtel" autocomplete="shipping tel"></label></p>
-    <p><label>Buzzer code: <input name="custbuzz" inputmode="numeric"></label></p>
-    <p><label>Email address: <input type=email name="custemail" autocomplete="shipping email"></label></p>
-    <fieldset>
-       <legend>Pizza Size</legend>
-       <p><label> <input type="radio" name="size" required value="small">Small</label></p>
-       <p><label> <input type="radio" name="size" required value="medium">Medium</label></p>
-       <p><label> <input type="radio" name="size" required value="large">Large</label></p>
-    </fieldset>
-    <fieldset>
-       <legend>Pizza Toppings</legend>
-       <p><label> <input type="checkbox" name="topping" value="bacon">Bacon</label></p>
-       <p><label> <input type="checkbox" name="topping" value="cheese">Extra Cheese</label></p>
-       <p><label> <input type="checkbox" name="topping" value="onion">Onion</label></p>
-       <p><label> <input type="checkbox" name="topping" value="mushroom">Mushroom</label></p>
-    </fieldset>
-    <p><label>Preferred delivery time: <input type="time" min="11:00" max="21:00" step="900" name="delivery" required></label></p>
-    <p><label>Delivery instructions: <textarea name="comments" maxlength=1000></textarea></label></p>
-    <p><button>Submit order</button></p>
- </form>
 
 
 
